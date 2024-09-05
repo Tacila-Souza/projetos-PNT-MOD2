@@ -1,21 +1,39 @@
+
 function carrossel() {
     return (
         <>
-            <div className="carrossel bd-example">
-                <div id="carouselExampleSlidesOnly" className="carousel slide" data-ride="carousel">
-                    <div className="carousel-inner">
-                        <div className="carousel-item">
-                            <img className="d-block w-100" data-src="holder.js/800x400?auto=yes&amp;bg=777&amp;fg=555&amp;text=Primeiro Slide" alt="Primeiro Slide [800x300]" src="img1.png" data-holder-rendered="true" />
-                        </div>
-                        <div className="carousel-item active">
-                            <img className="d-block w-100" data-src="holder.js/800x400?auto=yes&amp;bg=666&amp;fg=444&amp;text=Segundo Slide" alt="Segundo Slide [800x300]" src="img2.png" data-holder-rendered="true" />
-                        </div>
-                        <div className="carousel-item">
-                            <img className="d-block w-100" data-src="holder.js/800x400?auto=yes&amp;bg=555&amp;fg=333&amp;text=Terceiro Slide" alt="Terceiro Slide [800x300]" src="img3.png" data-holder-rendered="true" />
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div id="demo" className="carousel slide col-6 mx-auto" data-bs-ride="carousel">
+        <div className="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" className="active" aria-current="true"aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img src="https://picsum.photos/1080/720" alt="Los Angeles" className="d-block w-100"/>
+          </div>
+
+          <div className="carousel-item">
+            <img src="https://picsum.photos/1080/721" alt="Chicago" className="d-block w-100"/>
+          </div>
+
+          <div className="carousel-item">
+            <img src="https://picsum.photos/1081/720" alt="New York" className="d-block w-100"/>
+          </div>
+        </div>
+
+        <button
+          className="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Previous</span>
+        </button>
+
+        <button className="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Next</span>
+        </button>
+      </div>
         </>
     )
 }

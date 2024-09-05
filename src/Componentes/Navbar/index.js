@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function navbar() {
   return (
     <>
@@ -18,8 +20,9 @@ function navbar() {
     
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <div className="container-fluid row"/>
-  
-        <a className="navbar-brand col-11" href="#">CONECT ETE PE</a>
+      <a className="navbar-brand col-4" href="#">CONECT ETE PE</a>
+      <Link className="navbar-brand col-4" to='/Sobre'>Sobre</Link>
+        
         <button className="navbar-toggler col-2" type="button" data-bs-toggle="" data-bs-target="#navbarColor02"
           aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -29,7 +32,7 @@ function navbar() {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           </ul>
           <button className="btn btn-outline-light" type="submit">Botão</button>
-  
+          
       </div>
     </nav>
 
